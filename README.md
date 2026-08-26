@@ -46,6 +46,13 @@ pytest
 Covers column type detection and that the model learns the signal and only ever
 predicts valid labels.
 
+## Limitations and next steps
+
+- The synthetic data understates real accuracy; run on the UCI set for a number
+  that means something.
+- No probability calibration or feature-importance report yet.
+- Next: add SHAP feature importances and cross-validation.
+
 ## License
 
 MIT.

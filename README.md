@@ -8,6 +8,12 @@ categorical-heavy tabular ML pipeline.
 Runs offline on a synthetic dataset; point it at the public **UCI Secondary
 Mushroom Dataset** for real results (see [`data/`](data/)).
 
+## Demo
+
+![demo](assets/demo.gif)
+
+Generate it with [VHS](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
+
 ## What it shows
 
 - **Dtype-driven preprocessing.** Numeric and categorical columns are detected

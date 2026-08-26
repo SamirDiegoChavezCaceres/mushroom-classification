@@ -11,11 +11,11 @@ Mushroom Dataset** for real results (see [`data/`](data/)).
 - **Dtype-driven preprocessing.** Numeric and categorical columns are detected
   automatically, so the same pipeline trains on the small synthetic frame and on
   the wider real dataset without hand-listing columns.
-- **Robust encoding.** Categoricals are one-hot encoded with
-  `handle_unknown="ignore"`, so a category never seen during training does not
+- **Encoding that survives unseen categories.** Categoricals are one-hot encoded
+  with `handle_unknown="ignore"`, so a value never seen during training does not
   crash prediction at serve time.
-- **Honest metrics.** Accuracy plus F1 for the poisonous class - the costly
-  mistake here is calling a poisonous mushroom edible.
+- **The metric that fits the cost.** Accuracy plus F1 for the poisonous class;
+  the expensive mistake is calling a poisonous mushroom edible.
 
 ## Run it
 

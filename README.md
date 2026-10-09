@@ -12,6 +12,12 @@ Mushroom Dataset** for real results (see [`data/`](data/)).
 
 ![demo](assets/demo.gif)
 
+The demo (`scripts/demo.py`) runs offline on synthetic data (the public UCI
+mushroom dataset is optional). It (1) trains the dtype-driven preprocessing
+pipeline on 3000 generated rows and prints the metrics, and (2) prints sample
+predictions for eight mushrooms, showing cap color, gill color and bruising next
+to the predicted and actual edible/poisonous label.
+
 Generate it with [VHS](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
 
 ## What it shows
